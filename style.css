@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #dddddd;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+#calendar {
+  bottom: 0;
+  right: 60px;
+  position: absolute;
+  width: 500px;
+}
+
+.labels,
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: right;
+  grid-gap: 4px;
+}
+
+.dates span {
+  height: 60px;
+  font-size: 24px;
+  letter-spacing: -1px;
+  padding-right: 4px;
+  font-weight: 700;
+}
+
+.labels span {
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.monthLabel {
+  transform: rotate(270deg);
+  font-size: 90pt;
+  position: absolute;
+  right: -52px;
+  bottom: 700px;
+}
+
+.dayLabel {
+  border-top: 1px solid;
+  font-size: 50pt;
+  text-align: right;
+}
+
+.dateLabel {
+  text-align: right;
+  font-size: 30pt;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-family: "Boogaloo", cursive;
+  top: 30%;
+  position: absolute;
+  width: 100%;
+  max-width: calc(100% - 500px);
+  text-align: center;
+  font-size: 40pt;
+  padding: 80px;
+  box-sizing: border-box;
+}
